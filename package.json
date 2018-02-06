@@ -1,0 +1,19 @@
+{
+  "name": "p-wait-all",
+  "version": "0.0.0",
+  "description": "`Promise.all`, but it waits for all promises to settle even if one of them rejected",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "keywords": [
+    "promise"
+  ],
+  "repository": "goto-bus-stop/p-wait-all",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "delay": "^2.0.0",
+    "tape": "^4.6.3"
+  }
+}
