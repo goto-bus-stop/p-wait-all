@@ -10,6 +10,8 @@ module.exports = function waitAll (promises) {
     var err = null
     var results = []
 
+    checkDone() // if we got an empty array
+
     for (var i = 0; i < promises.length; i++) (function (p, i) {
       p.then(function (result) {
         results[i] = result

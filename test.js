@@ -55,3 +55,10 @@ test('waits for promises to settle before rejecting', function (t) {
     t.end()
   })
 })
+
+test('resolves if there are no promises', function (t) {
+  waitAll([]).then(function () {
+    t.pass('should resolve if there are no promises')
+    t.end()
+  })
+})
