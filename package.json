@@ -1,6 +1,6 @@
 {
   "name": "p-wait-all",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "`Promise.all`, but it waits for all promises to settle even if one of them rejected",
   "main": "index.js",
   "scripts": {
