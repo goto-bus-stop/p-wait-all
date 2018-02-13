@@ -1,4 +1,10 @@
 module.exports = function waitAll (promises) {
+  if (!Array.isArray(promises)) {
+    // kinda just want to throw here, but Promise.all also rejects
+    // if the type is incorrect so I'll just follow along
+    return Promise.reject(new TypeError('p-wait-all: promises must be array'))
+  }
+
   return new Promise(function (resolve, reject) {
     var ready = 0
     var err = null

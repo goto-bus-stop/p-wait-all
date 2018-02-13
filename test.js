@@ -2,6 +2,19 @@ var test = require('tape')
 var delay = require('delay')
 var waitAll = require('./')
 
+test('checks argument type', function (t) {
+  t.plan(3)
+  waitAll(null).catch(function (err) {
+    t.ok(err)
+  })
+  waitAll('abc').catch(function (err) {
+    t.ok(err)
+  })
+  waitAll({ whatever: 'lol' }).catch(function (err) {
+    t.ok(err)
+  })
+})
+
 test('collects resolution values like Promise.all', function (t) {
   waitAll([
     Promise.resolve(1),
