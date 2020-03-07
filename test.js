@@ -1,6 +1,11 @@
 var test = require('tape')
-var delay = require('delay')
 var waitAll = require('./')
+
+function delay (ms) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, ms)
+  })
+}
 
 test('checks argument type', function (t) {
   t.plan(3)
