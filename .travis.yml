@@ -1,8 +1,9 @@
 language: node_js
-sudo: false
+os: linux
+dist: xenial
 node_js:
-  - 9
+  - 12
+  - 10
   - 8
-  - 7
   - 6
   - 4
