@@ -13,6 +13,6 @@
   "author": "Renée Kooi <renee@kooi.me>",
   "license": "MIT",
   "devDependencies": {
-    "tape": "^4.6.3"
+    "tape": "^5.0.0"
   }
 }
